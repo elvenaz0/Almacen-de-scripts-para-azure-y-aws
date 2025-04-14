@@ -1,0 +1,1656 @@
+{
+"alb_info":
+{
+    "LoadBalancers": [
+        {
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:loadbalancer/app/ALB-ASCys-FTP/03b137f136100803",
+            "DNSName": "ALB-ASCys-FTP-1913773613.us-west-2.elb.amazonaws.com",
+            "CanonicalHostedZoneId": "Z1H1FL5HABSF5",
+            "CreatedTime": "2021-10-11T22:44:52.820000+00:00",
+            "LoadBalancerName": "ALB-ASCys-FTP",
+            "Scheme": "internet-facing",
+            "VpcId": "vpc-4e6eb92a",
+            "State": {
+                "Code": "active"
+            },
+            "Type": "application",
+            "AvailabilityZones": [
+                {
+                    "ZoneName": "us-west-2c",
+                    "SubnetId": "subnet-6ed93335",
+                    "LoadBalancerAddresses": []
+                },
+                {
+                    "ZoneName": "us-west-2a",
+                    "SubnetId": "subnet-cfa3e0a8",
+                    "LoadBalancerAddresses": []
+                }
+            ],
+            "SecurityGroups": [
+                "sg-0fd91fb0ea476f6c7"
+            ],
+            "IpAddressType": "ipv4",
+            "EnablePrefixForIpv6SourceNat": "off"
+        }
+    ]
+}
+,
+"alb_listeners_and_rules":
+[
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/00a30d3ee0b94959/6c107fb9ec72571b",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-ASCysFTP/fc1ebab6d661e78e",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-ASCysFTP/fc1ebab6d661e78e",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/41d975957ed249db/eeb99d8d8d776570",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10010/045048d328f9ff4d",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10010/045048d328f9ff4d",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/5d7b38f457c8b697/d447188ad2564c8f",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-AppEspejo-10016/76fdf4b98fafd758",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-AppEspejo-10016/76fdf4b98fafd758",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/5fffe9f159a4a607/2387bc64d9af7249",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-AppEspejo-10018/3ca31dafa090e781",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-AppEspejo-10018/3ca31dafa090e781",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/6f2b29defeccd5a9/8993e04a8d67b5c5",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "redirect",
+                    "Order": 1,
+                    "RedirectConfig": {
+                        "Protocol": "HTTPS",
+                        "Port": "443",
+                        "Host": "#{host}",
+                        "Path": "/#{path}",
+                        "Query": "#{query}",
+                        "StatusCode": "HTTP_301"
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/801cfc3ab518f848/a5b7e9c28018537d",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-10025/bfab7515d1db224c",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-10025/bfab7515d1db224c",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/8ad321b39470f790/6e0d8b7fd512d32b",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10022/d4bd1f92005a51a9",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10022/d4bd1f92005a51a9",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/b1c4ef48fb6095d7/2a1445114bbceb88",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10021/11599eeb6400767d",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10021/11599eeb6400767d",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+,
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:listener-rule/app/ALB-ASCys-FTP/03b137f136100803/dc1ff39710d8a2f2/ecb2a72246a28a3a",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10020/aa3e44dc35d6f073",
+                    "Order": 1,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:290114661104:targetgroup/TG-EC2AMAZ-S74PD8M-10020/aa3e44dc35d6f073",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false,
+                            "DurationSeconds": 3600
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+
+],
+"target_groups":
+[
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10025
+            },
+            "HealthCheckPort": "10025",
+            "TargetHealth": {
+                "State": "unhealthy",
+                "Reason": "Target.Timeout",
+                "Description": "Request timed out"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0d1039e66f5600cf3",
+                "Port": 80
+            },
+            "HealthCheckPort": "80",
+            "TargetHealth": {
+                "State": "healthy"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10016
+            },
+            "HealthCheckPort": "10016",
+            "TargetHealth": {
+                "State": "healthy"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10018
+            },
+            "HealthCheckPort": "10018",
+            "TargetHealth": {
+                "State": "unhealthy",
+                "Reason": "Target.ResponseCodeMismatch",
+                "Description": "Health checks failed with these codes: [404]"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10010
+            },
+            "HealthCheckPort": "10010",
+            "TargetHealth": {
+                "State": "unhealthy",
+                "Reason": "Target.ResponseCodeMismatch",
+                "Description": "Health checks failed with these codes: [302]"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10020
+            },
+            "HealthCheckPort": "10020",
+            "TargetHealth": {
+                "State": "unhealthy",
+                "Reason": "Target.ResponseCodeMismatch",
+                "Description": "Health checks failed with these codes: [404]"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10021
+            },
+            "HealthCheckPort": "10021",
+            "TargetHealth": {
+                "State": "unhealthy",
+                "Reason": "Target.ResponseCodeMismatch",
+                "Description": "Health checks failed with these codes: [404]"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+,
+{
+    "TargetHealthDescriptions": [
+        {
+            "Target": {
+                "Id": "i-0ef9144228dc2f5e1",
+                "Port": 10022
+            },
+            "HealthCheckPort": "10022",
+            "TargetHealth": {
+                "State": "healthy"
+            },
+            "AdministrativeOverride": {
+                "State": "no_override",
+                "Reason": "AdministrativeOverride.NoOverride",
+                "Description": "No override is currently active on target"
+            }
+        }
+    ]
+}
+
+],
+"security_group_rules_full":
+[
+    [
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10301,
+            "ToPort": 10301,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 1433,
+            "ToPort": 1433,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.33/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.49.7/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.201/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.49.10/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.204/32"
+                },
+                {
+                    "Description": "NS-4253",
+                    "CidrIp": "10.91.49.11/32"
+                },
+                {
+                    "Description": "IBSD19-39382",
+                    "CidrIp": "10.91.49.64/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 1676",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 8080,
+            "ToPort": 8080,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 1676",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10021,
+            "ToPort": 10021,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-9089",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10300,
+            "ToPort": 10300,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10022,
+            "ToPort": 10022,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-9089",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 5000,
+            "ToPort": 5000,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "41264",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10018,
+            "ToPort": 10018,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-5485",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10010,
+            "ToPort": 10010,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-3693",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 1006,
+            "ToPort": 1006,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-4851",
+                    "CidrIp": "10.91.49.59/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10020,
+            "ToPort": 10020,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-4333",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 3389,
+            "ToPort": 3389,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Ivan U",
+                    "CidrIp": "189.217.72.92/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 445,
+            "ToPort": 445,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.33/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.49.7/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.201/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.49.10/32"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.204/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 1676",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10017,
+            "ToPort": 10017,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-5501",
+                    "CidrIp": "10.91.49.59/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 0,
+            "ToPort": 65535,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "IBSD19-40572",
+                    "CidrIp": "10.91.49.13/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10016,
+            "ToPort": 10016,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-5017 Balanceador",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "-1",
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "10.16.0.252/32"
+                },
+                {
+                    "CidrIp": "148.203.156.66/32"
+                },
+                {
+                    "CidrIp": "160.118.117.0/24"
+                },
+                {
+                    "CidrIp": "160.118.121.0/24"
+                },
+                {
+                    "Description": "PaloAlto",
+                    "CidrIp": "172.31.1.10/32"
+                },
+                {
+                    "CidrIp": "172.31.1.140/32"
+                },
+                {
+                    "CidrIp": "172.31.1.169/32"
+                },
+                {
+                    "CidrIp": "172.31.1.209/32"
+                },
+                {
+                    "CidrIp": "172.31.1.220/32"
+                },
+                {
+                    "CidrIp": "172.31.1.233/32"
+                },
+                {
+                    "Description": "PaloAlto",
+                    "CidrIp": "172.31.1.251/32"
+                },
+                {
+                    "Description": "PaloAlto",
+                    "CidrIp": "172.31.1.39/32"
+                },
+                {
+                    "CidrIp": "189.206.166.242/32"
+                },
+                {
+                    "CidrIp": "189.212.98.148/32"
+                },
+                {
+                    "CidrIp": "192.168.0.0/24"
+                },
+                {
+                    "Description": "Correo Politica de Retencion  Puertos habilitados al mundo Compas",
+                    "CidrIp": "10.91.48.0/23"
+                },
+                {
+                    "Description": "SOPHOS",
+                    "CidrIp": "172.16.1.0/24"
+                },
+                {
+                    "Description": "IBSD19-40572",
+                    "CidrIp": "10.91.49.12/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10000,
+            "ToPort": 10000,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 1676",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10001,
+            "ToPort": 10001,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 2567",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10203,
+            "ToPort": 10203,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-4851",
+                    "CidrIp": "10.91.49.59/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10204,
+            "ToPort": 10204,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "NS-4851",
+                    "CidrIp": "10.91.49.59/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 1434,
+            "ToPort": 1434,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Case 2567",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        }
+    ],
+    [
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10301,
+            "ToPort": 10301,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 80,
+            "ToPort": 80,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "VentanaHomologacionQA",
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 8104,
+            "ToPort": 8104,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 1128,
+            "ToPort": 1128,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10300,
+            "ToPort": 10300,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "icmp",
+            "FromPort": -1,
+            "ToPort": -1,
+            "UserIdGroupPairs": [
+                {
+                    "Description": "Tenable.io",
+                    "UserId": "290114661104",
+                    "GroupId": "sg-e8617e95"
+                }
+            ],
+            "IpRanges": [],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 50100,
+            "ToPort": 51000,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 3389,
+            "ToPort": 3389,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "148.244.112.46/32"
+                },
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "189.205.6.27/32"
+                },
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "201.141.192.169/32"
+                },
+                {
+                    "Description": "inbest",
+                    "CidrIp": "201.150.35.89/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 0,
+            "ToPort": 65535,
+            "UserIdGroupPairs": [
+                {
+                    "Description": "Tenable.io",
+                    "UserId": "290114661104",
+                    "GroupId": "sg-e8617e95"
+                }
+            ],
+            "IpRanges": [
+                {
+                    "Description": "Nubopserta",
+                    "CidrIp": "187.189.146.244/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "-1",
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "172.31.1.220/32"
+                },
+                {
+                    "CidrIp": "172.31.1.140/32"
+                },
+                {
+                    "CidrIp": "172.31.1.209/32"
+                },
+                {
+                    "Description": "PaloAlto",
+                    "CidrIp": "172.31.1.251/32"
+                },
+                {
+                    "Description": "Ventana1602",
+                    "CidrIp": "172.31.1.169/32"
+                },
+                {
+                    "Description": "Ventana1602",
+                    "CidrIp": "172.31.1.233/32"
+                },
+                {
+                    "CidrIp": "200.68.128.138/32"
+                },
+                {
+                    "Description": "BASTION",
+                    "CidrIp": "10.16.0.252/32"
+                },
+                {
+                    "Description": "Nubos",
+                    "CidrIp": "189.146.136.181/32"
+                },
+                {
+                    "Description": "ITNuba",
+                    "CidrIp": "189.128.176.43/32"
+                },
+                {
+                    "Description": "EMM",
+                    "CidrIp": "99.3.111.235/32"
+                },
+                {
+                    "Description": "RM",
+                    "CidrIp": "187.177.42.208/32"
+                },
+                {
+                    "Description": "Nubosperta",
+                    "CidrIp": "187.190.166.64/32"
+                },
+                {
+                    "CidrIp": "189.141.105.140/32"
+                },
+                {
+                    "Description": "FH",
+                    "CidrIp": "201.103.20.109/32"
+                },
+                {
+                    "Description": "JR",
+                    "CidrIp": "189.203.174.218/32"
+                },
+                {
+                    "Description": "ACP",
+                    "CidrIp": "187.169.194.5/32"
+                },
+                {
+                    "Description": "AYNM",
+                    "CidrIp": "187.191.38.172/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "189.217.97.16/32"
+                },
+                {
+                    "Description": "Bastion",
+                    "CidrIp": "10.16.0.252/32"
+                },
+                {
+                    "Description": "Bastion",
+                    "CidrIp": "54.186.106.33/32"
+                },
+                {
+                    "Description": "Nessus",
+                    "CidrIp": "172.31.1.51/32"
+                },
+                {
+                    "Description": "AlienVault",
+                    "CidrIp": "172.31.1.49/32"
+                },
+                {
+                    "Description": "EPC",
+                    "CidrIp": "172.31.1.166/32"
+                },
+                {
+                    "CidrIp": "172.31.0.0/16"
+                },
+                {
+                    "CidrIp": "200.236.125.21/32"
+                },
+                {
+                    "Description": "RE: pasar interface ACSYs a produccion",
+                    "CidrIp": "35.166.57.122/32"
+                },
+                {
+                    "Description": "RE: pasar interface ACSYs a produccion",
+                    "CidrIp": "54.68.87.73/32"
+                },
+                {
+                    "Description": "RE: pasar interface ACSYs a produccion",
+                    "CidrIp": "52.37.186.111/32"
+                },
+                {
+                    "Description": "RE: pasar interface ACSYs a produccion",
+                    "CidrIp": "206.112.73.0/24"
+                },
+                {
+                    "Description": "RE: pasar interface ACSYs a produccion",
+                    "CidrIp": "65.221.12.0/24"
+                },
+                {
+                    "CidrIp": "200.10.243.242/32"
+                },
+                {
+                    "CidrIp": "201.103.121.21/32"
+                },
+                {
+                    "CidrIp": "189.216.191.13/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 23,
+            "ToPort": 23,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 20,
+            "ToPort": 20,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "148.244.112.46/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 10204,
+            "ToPort": 10204,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "CidrIp": "10.91.49.59/32"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 6001,
+            "ToPort": 6001,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "tcp",
+            "FromPort": 8102,
+            "ToPort": 8102,
+            "UserIdGroupPairs": [],
+            "IpRanges": [
+                {
+                    "Description": "Solicitud entradas etc/hosts",
+                    "CidrIp": "172.31.1.128/25"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        },
+        {
+            "IpProtocol": "udp",
+            "FromPort": 0,
+            "ToPort": 65535,
+            "UserIdGroupPairs": [
+                {
+                    "Description": "Tenable.io",
+                    "UserId": "290114661104",
+                    "GroupId": "sg-e8617e95"
+                }
+            ],
+            "IpRanges": [],
+            "Ipv6Ranges": [],
+            "PrefixListIds": []
+        }
+    ]
+]
+,
+"security_group_rules_summary":
+[
+    [
+        {
+            "From": 10301,
+            "To": 10301,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 1433,
+            "To": 1433,
+            "CIDR": [
+                "10.91.48.33/32",
+                "10.91.49.7/32",
+                "10.91.48.201/32",
+                "10.91.49.10/32",
+                "10.91.48.204/32",
+                "10.91.49.11/32",
+                "10.91.49.64/32"
+            ]
+        },
+        {
+            "From": 80,
+            "To": 80,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 8080,
+            "To": 8080,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10021,
+            "To": 10021,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10300,
+            "To": 10300,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10022,
+            "To": 10022,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 5000,
+            "To": 5000,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10018,
+            "To": 10018,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10010,
+            "To": 10010,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 1006,
+            "To": 1006,
+            "CIDR": [
+                "10.91.49.59/32"
+            ]
+        },
+        {
+            "From": 10020,
+            "To": 10020,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 3389,
+            "To": 3389,
+            "CIDR": [
+                "189.217.72.92/32"
+            ]
+        },
+        {
+            "From": 445,
+            "To": 445,
+            "CIDR": [
+                "10.91.48.33/32",
+                "10.91.49.7/32",
+                "10.91.48.201/32",
+                "10.91.49.10/32",
+                "10.91.48.204/32"
+            ]
+        },
+        {
+            "From": 443,
+            "To": 443,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10017,
+            "To": 10017,
+            "CIDR": [
+                "10.91.49.59/32"
+            ]
+        },
+        {
+            "From": 0,
+            "To": 65535,
+            "CIDR": [
+                "10.91.49.13/32"
+            ]
+        },
+        {
+            "From": 10016,
+            "To": 10016,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": null,
+            "To": null,
+            "CIDR": [
+                "10.16.0.252/32",
+                "148.203.156.66/32",
+                "160.118.117.0/24",
+                "160.118.121.0/24",
+                "172.31.1.10/32",
+                "172.31.1.140/32",
+                "172.31.1.169/32",
+                "172.31.1.209/32",
+                "172.31.1.220/32",
+                "172.31.1.233/32",
+                "172.31.1.251/32",
+                "172.31.1.39/32",
+                "189.206.166.242/32",
+                "189.212.98.148/32",
+                "192.168.0.0/24",
+                "10.91.48.0/23",
+                "172.16.1.0/24",
+                "10.91.49.12/32"
+            ]
+        },
+        {
+            "From": 10000,
+            "To": 10000,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10001,
+            "To": 10001,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 10203,
+            "To": 10203,
+            "CIDR": [
+                "10.91.49.59/32"
+            ]
+        },
+        {
+            "From": 10204,
+            "To": 10204,
+            "CIDR": [
+                "10.91.49.59/32"
+            ]
+        },
+        {
+            "From": 1434,
+            "To": 1434,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        }
+    ],
+    [
+        {
+            "From": 10301,
+            "To": 10301,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 80,
+            "To": 80,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": 8104,
+            "To": 8104,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 1128,
+            "To": 1128,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 10300,
+            "To": 10300,
+            "CIDR": [
+                "0.0.0.0/0"
+            ]
+        },
+        {
+            "From": -1,
+            "To": -1,
+            "CIDR": []
+        },
+        {
+            "From": 50100,
+            "To": 51000,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 443,
+            "To": 443,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 3389,
+            "To": 3389,
+            "CIDR": [
+                "148.244.112.46/32",
+                "189.205.6.27/32",
+                "201.141.192.169/32",
+                "201.150.35.89/32"
+            ]
+        },
+        {
+            "From": 0,
+            "To": 65535,
+            "CIDR": [
+                "187.189.146.244/32"
+            ]
+        },
+        {
+            "From": null,
+            "To": null,
+            "CIDR": [
+                "172.31.1.220/32",
+                "172.31.1.140/32",
+                "172.31.1.209/32",
+                "172.31.1.251/32",
+                "172.31.1.169/32",
+                "172.31.1.233/32",
+                "200.68.128.138/32",
+                "10.16.0.252/32",
+                "189.146.136.181/32",
+                "189.128.176.43/32",
+                "99.3.111.235/32",
+                "187.177.42.208/32",
+                "187.190.166.64/32",
+                "189.141.105.140/32",
+                "201.103.20.109/32",
+                "189.203.174.218/32",
+                "187.169.194.5/32",
+                "187.191.38.172/32"
+            ]
+        },
+        {
+            "From": 22,
+            "To": 22,
+            "CIDR": [
+                "189.217.97.16/32",
+                "10.16.0.252/32",
+                "54.186.106.33/32",
+                "172.31.1.51/32",
+                "172.31.1.49/32",
+                "172.31.1.166/32",
+                "172.31.0.0/16",
+                "200.236.125.21/32",
+                "35.166.57.122/32",
+                "54.68.87.73/32",
+                "52.37.186.111/32",
+                "206.112.73.0/24",
+                "65.221.12.0/24",
+                "200.10.243.242/32",
+                "201.103.121.21/32",
+                "189.216.191.13/32"
+            ]
+        },
+        {
+            "From": 23,
+            "To": 23,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 20,
+            "To": 20,
+            "CIDR": [
+                "148.244.112.46/32"
+            ]
+        },
+        {
+            "From": 10204,
+            "To": 10204,
+            "CIDR": [
+                "10.91.49.59/32"
+            ]
+        },
+        {
+            "From": 6001,
+            "To": 6001,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 8102,
+            "To": 8102,
+            "CIDR": [
+                "172.31.1.128/25"
+            ]
+        },
+        {
+            "From": 0,
+            "To": 65535,
+            "CIDR": []
+        }
+    ]
+]
+}
