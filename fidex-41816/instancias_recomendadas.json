@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "FidexAppsProd2",
+    "tipo_recomendado": "t3.micro"
+  },
+  {
+    "nombre": "FidexAppsProd3",
+    "tipo_recomendado": "t3.small"
+  },
+  {
+    "nombre": "FidexAppsProd4",
+    "tipo_recomendado": "t3.micro"
+  },
+  {
+    "nombre": "FidexAppsProd5",
+    "tipo_recomendado": "t3.medium"
+  },
+  {
+    "nombre": "FidexAppsProd7",
+    "tipo_recomendado": "t3.nano"
+  },
+  {
+    "nombre": "FidexAppsProd9",
+    "tipo_recomendado": "t3a.large"
+  },
+  {
+    "nombre": "FidexSopProd3",
+    "tipo_recomendado": "c5.large"
+  },
+  {
+    "nombre": "FidexSopProd4",
+    "tipo_recomendado": "t3.micro"
+  },
+  {
+    "nombre": "FidexDBProd1",
+    "tipo_recomendado": "c5.large"
+  }
+]

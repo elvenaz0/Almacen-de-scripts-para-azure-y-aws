@@ -1,0 +1,155 @@
+[
+{
+    "nombre_instancia": "FidexAppsProd2",
+    "ip_privada": "10.10.7.196",
+    "ip_publica": "44.224.204.123",
+    "elastic_ip": "44.224.204.123",
+    "ami": "ami-054cd6f7db031efb9",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-0ab92b942c2d3b961"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexAppsProd3",
+    "ip_privada": "10.10.7.133",
+    "ip_publica": "100.21.244.249",
+    "elastic_ip": "100.21.244.249",
+    "ami": "ami-0cc6f5d6810493cbc",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-0e7aaa8a944e58db3"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexAppsProd4",
+    "ip_privada": "10.10.7.72",
+    "ip_publica": "44.230.121.121",
+    "elastic_ip": "44.230.121.121",
+    "ami": "ami-0ffb8a7104d2b2f57",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-058932f234236d76b"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexAppsProd5",
+    "ip_privada": "10.10.9.226",
+    "ip_publica": null,
+    "elastic_ip": null,
+    "ami": "ami-0ffb8a7104d2b2f57",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-09a9d42700df10df7",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-084d631057c1871ed"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexAppsProd7",
+    "ip_privada": "10.10.7.66",
+    "ip_publica": "44.235.115.23",
+    "elastic_ip": "44.235.115.23",
+    "ami": "ami-0cf5095664e10bcb5",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-05f7295beb25dabfe"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexAppsProd9",
+    "ip_privada": "10.10.7.216",
+    "ip_publica": "54.218.217.180",
+    "elastic_ip": "54.218.217.180",
+    "ami": "ami-01f14dc60171d8d7b",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 2,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3a",
+    "discos": [
+    "vol-0a82e5dec89769b93"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexSopProd3",
+    "ip_privada": "10.10.7.213",
+    "ip_publica": "54.214.68.61",
+    "elastic_ip": "54.214.68.61",
+    "ami": "ami-0b7ebdd52b84c244d",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-0c10eb92b00477662",
+    "cpu": 2,
+    "ebs_optimizado": true,
+    "familia_instancia": "c5",
+    "discos": [
+    "vol-0639d555c73176041"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexSopProd4",
+    "ip_privada": "10.10.9.246",
+    "ip_publica": null,
+    "elastic_ip": null,
+    "ami": "ami-091f300417a06d788",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-09a9d42700df10df7",
+    "cpu": 1,
+    "ebs_optimizado": true,
+    "familia_instancia": "t3",
+    "discos": [
+    "vol-0a1542697de436743"
+],
+    "software_licenciado_por_cpu": null
+  }
+,
+{
+    "nombre_instancia": "FidexDBProd1",
+    "ip_privada": "10.10.9.15",
+    "ip_publica": "35.83.134.161",
+    "elastic_ip": "35.83.134.161",
+    "ami": "ami-0d639a48468c98db8",
+    "vpc": "vpc-0b826835a8c208349",
+    "subnet": "subnet-09a9d42700df10df7",
+    "cpu": 2,
+    "ebs_optimizado": true,
+    "familia_instancia": "c5",
+    "discos": [
+    "vol-007910febbe8c7b89",
+    "vol-0f0e19bf1b87bf7c2"
+],
+    "software_licenciado_por_cpu": null
+  }
+]
