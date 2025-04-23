@@ -1,0 +1,499 @@
+{
+  "Fecha": "Wed Apr 23 12:37:41 AM UTC 2025",
+  "Región": "us-east-1",
+  "PlanesDeBackup": [
+    {
+      "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+      "Detalles": {
+    "BackupPlan": {
+        "BackupPlanName": "1-day-backup",
+        "Rules": [
+            {
+                "RuleName": "1-day-backup",
+                "TargetBackupVaultName": "1-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 1 ? * * *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 420,
+                "Lifecycle": {
+                    "DeleteAfterDays": 30
+                },
+                "RuleId": "a48e9930-8201-45b2-82c1-b67892da12ab",
+                "EnableContinuousBackup": false,
+                "ScheduleExpressionTimezone": "America/Mexico_City"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "enabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+    "VersionId": "Y2I3NzViN2ItNDVjYy00OWFlLThiODQtOGZmYTMxMDE2Mzk0",
+    "CreationDate": "2024-04-16T16:23:27.529000+00:00",
+    "LastExecutionDate": "2025-04-22T07:16:29.262000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "enabled"
+            }
+        }
+    ]
+},
+      "Selecciones": {
+    "BackupSelectionsList": [
+        {
+            "SelectionId": "65557688-d154-47d3-8251-1ff7d2767f1c",
+            "SelectionName": "1-day-backup",
+            "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+            "CreationDate": "2024-04-16T15:23:38.745000+00:00",
+            "CreatorRequestId": "1e4fbe81-853b-4ae6-8802-65d36a5c13aa",
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole"
+        }
+    ]
+}
+    },
+    {
+      "BackupPlanId": "a2d36353-17c0-471f-8b45-68be29f6397c",
+      "Detalles": {
+    "BackupPlan": {
+        "BackupPlanName": "30-day-backup",
+        "Rules": [
+            {
+                "RuleName": "30-day-backup",
+                "TargetBackupVaultName": "30-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 1 28 * ? *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 420,
+                "Lifecycle": {
+                    "DeleteAfterDays": 30
+                },
+                "RecoveryPointTags": {},
+                "RuleId": "fdf5ff24-44d3-4b2e-b967-9ebc510904fa",
+                "EnableContinuousBackup": false,
+                "ScheduleExpressionTimezone": "America/Mexico_City"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "enabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "a2d36353-17c0-471f-8b45-68be29f6397c",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:a2d36353-17c0-471f-8b45-68be29f6397c",
+    "VersionId": "NWJhZWVmNzEtNTJmZS00ODFlLThiYzItMzFhMmRhNWJlNzJk",
+    "CreationDate": "2024-04-16T16:24:33.433000+00:00",
+    "LastExecutionDate": "2025-03-28T07:01:26.421000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "enabled"
+            }
+        }
+    ]
+},
+      "Selecciones": {
+    "BackupSelectionsList": [
+        {
+            "SelectionId": "bc7908ff-e873-4700-8b5d-832756385226",
+            "SelectionName": "30-day-backup",
+            "BackupPlanId": "a2d36353-17c0-471f-8b45-68be29f6397c",
+            "CreationDate": "2024-04-16T16:24:50.869000+00:00",
+            "CreatorRequestId": "e4630877-1c4d-4f11-af4e-ff4653ec4abe",
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole"
+        }
+    ]
+}
+    },
+    {
+      "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+      "Detalles": {
+    "BackupPlan": {
+        "BackupPlanName": "1-day-central-plan",
+        "Rules": [
+            {
+                "RuleName": "1-day-central-rule",
+                "TargetBackupVaultName": "1-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 ? * * *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 480,
+                "Lifecycle": {
+                    "DeleteAfterDays": 7
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-1-Days"
+                },
+                "RuleId": "84836448-d00e-30e6-9c4b-f8829031fc44",
+                "CopyActions": [],
+                "EnableContinuousBackup": false,
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "VersionId": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+    "CreationDate": "2024-10-18T15:59:30.900000+00:00",
+    "LastExecutionDate": "2025-04-22T07:03:51.483000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": {
+    "BackupSelectionsList": [
+        {
+            "SelectionId": "8b900613-fba8-38c5-9ed7-a180ba90a521",
+            "SelectionName": "1-day-central-resources",
+            "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+            "CreationDate": "2024-10-18T15:59:30.900000+00:00",
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole"
+        }
+    ]
+}
+    },
+    {
+      "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+      "Detalles": {
+    "BackupPlan": {
+        "BackupPlanName": "30-day-central-policy",
+        "Rules": [
+            {
+                "RuleName": "30-day-central-rule",
+                "TargetBackupVaultName": "30-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 28 * ? *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 1440,
+                "Lifecycle": {
+                    "DeleteAfterDays": 30
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-30-Days"
+                },
+                "RuleId": "5602e544-7ec7-3f51-bad5-504a772450f8",
+                "CopyActions": [],
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "VersionId": "OGUwN2UwYjAtNzJlZi00YzcwLTg3YWQtZjhlZDJlM2ZhNDhh",
+    "CreationDate": "2024-10-18T15:59:39.063000+00:00",
+    "LastExecutionDate": "2025-03-28T07:08:02.114000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": {
+    "BackupSelectionsList": [
+        {
+            "SelectionId": "e950fa8e-b1d3-3fac-8468-443377c23d05",
+            "SelectionName": "30-day-central-resources",
+            "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+            "CreationDate": "2024-10-18T15:59:39.063000+00:00",
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole"
+        }
+    ]
+}
+    }
+  ],
+  "ResumenDeBackups": {
+    "COMPLETED": {
+    "BackupJobs": [
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "89C36D68-0F3E-D403-27BA-5F0246BF26E3",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-01d83ded002b5ac70",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0a1c4c62fb9fcba82",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:33:22.925000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanVersion": "Y2I3NzViN2ItNDVjYy00OWFlLThiODQtOGZmYTMxMDE2Mzk0",
+                "BackupRuleId": "a48e9930-8201-45b2-82c1-b67892da12ab"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-Landing-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "04F07EC4-1092-E107-508A-E4A35E2FBD6B",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0471fe70dfd82c8d7",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0cb64db82dfad3f03",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:46:03.425000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanVersion": "Y2I3NzViN2ItNDVjYy00OWFlLThiODQtOGZmYTMxMDE2Mzk0",
+                "BackupRuleId": "a48e9930-8201-45b2-82c1-b67892da12ab"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-Magazine-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "D976C01F-4509-387F-4281-7F8F1D6F41C7",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-064e33ab1200e4f23",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0bb627314dc9f4528",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:29:35.353000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanVersion": "Y2I3NzViN2ItNDVjYy00OWFlLThiODQtOGZmYTMxMDE2Mzk0",
+                "BackupRuleId": "a48e9930-8201-45b2-82c1-b67892da12ab"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-APP-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "66EA162C-A520-BF2B-37B4-8DC2927E0712",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-025a9e0e5b51b176e",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0a1c4c62fb9fcba82",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:19:15.984000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-Landing-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "4CB5D883-8A5F-89D4-5F53-C4C08550FE9C",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-034f98d52205949ef",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-05ffcf2acb5dde0a3",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:24:23.391000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 21474836480,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "1CB50B90-4F6B-BCAE-F762-EA17710609DD",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0d92b779a4e20524b",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-05310abb6a7a26d15",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:27:16.421000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 8589934592,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Stage",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "78A36C9D-2453-08E3-7EB5-60B267AE16A2",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-07ee3f3d7ac855ab3",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-05ffcf2acb5dde0a3",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:42:09.316000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 21474836480,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:5f6699d0-fd8b-4760-aaaf-7184c813aaa6",
+                "BackupPlanVersion": "Y2I3NzViN2ItNDVjYy00OWFlLThiODQtOGZmYTMxMDE2Mzk0",
+                "BackupRuleId": "a48e9930-8201-45b2-82c1-b67892da12ab"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "9FB10959-B4E0-27FC-C35E-E2AA77DDFE00",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-01e4cf946c12d8ffe",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0cb64db82dfad3f03",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:31:47.591000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-Magazine-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "70D62162-B255-F717-6280-CF4A7231656D",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-02d22328f327f3448",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0fbc981a99fc11595",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:31:46.075000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 322122547200,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2_public-Credicor-Contpaqi-Prod",
+            "MessageCategory": "SUCCESS"
+        },
+        {
+            "AccountId": "526251804907",
+            "BackupJobId": "645B3170-3B50-0931-BB53-EB146261A238",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:526251804907:backup-vault:1-Day-Central-Vault",
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-013a4c7cdc75b460f",
+            "ResourceArn": "arn:aws:ec2:us-east-1:526251804907:instance/i-0bb627314dc9f4528",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:20:20.460000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 16106127360,
+            "IamRoleArn": "arn:aws:iam::526251804907:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:526251804907:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWQ3OWJmNDItYmJlYy00Y2U2LWE4MWItN2Y1M2Q4OTE2ZWYw",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "StartBy": "2025-04-22T08:00:00+00:00",
+            "ResourceType": "EC2",
+            "IsParent": false,
+            "ResourceName": "EC2-Credicor-Web-APP-Prod",
+            "MessageCategory": "SUCCESS"
+        }
+    ],
+    "NextToken": "eyJ0aW1lc3RhbXAiOiIyMDI1LTA0LTIzVDAwOjM4OjA3LjUwN1oiLCJuZXh0VG9rZW5Kc29uIjoie1wiYWNjb3VudElkQW5kQWdncmVnYXRlZFN0YXRlXCI6e1wic1wiOlwiNTI2MjUxODA0OTA3K0FHR1JFR0FURURfQ09NUExFVEVEXCIsXCJuXCI6bnVsbCxcImJcIjpudWxsLFwibVwiOm51bGwsXCJsXCI6bnVsbCxcImJvb2xcIjpudWxsLFwic3NcIjpudWxsLFwiaW50XCI6bnVsbCxcImRlY2ltYWxcIjpudWxsLFwiZG91YmxlXCI6bnVsbCxcIm5zXCI6bnVsbCxcImJzXCI6bnVsbCxcImludHNldFwiOm51bGwsXCJkZWNpbWFsc2V0XCI6bnVsbCxcImRvdWJsZXNldFwiOm51bGwsXCJudWxsXCI6bnVsbH0sXCJiYWNrdXBKb2JJZFwiOntcInNcIjpcIjY0NUIzMTcwLTNCNTAtMDkzMS1CQjUzLUVCMTQ2MjYxQTIzOFwiLFwiblwiOm51bGwsXCJiXCI6bnVsbCxcIm1cIjpudWxsLFwibFwiOm51bGwsXCJib29sXCI6bnVsbCxcInNzXCI6bnVsbCxcImludFwiOm51bGwsXCJkZWNpbWFsXCI6bnVsbCxcImRvdWJsZVwiOm51bGwsXCJuc1wiOm51bGwsXCJic1wiOm51bGwsXCJpbnRzZXRcIjpudWxsLFwiZGVjaW1hbHNldFwiOm51bGwsXCJkb3VibGVzZXRcIjpudWxsLFwibnVsbFwiOm51bGx9LFwiY3JlYXRpb25EYXRlXCI6e1wic1wiOm51bGwsXCJuXCI6XCIxNzQ1MzA1MjAwMDAwXCIsXCJiXCI6bnVsbCxcIm1cIjpudWxsLFwibFwiOm51bGwsXCJib29sXCI6bnVsbCxcInNzXCI6bnVsbCxcImludFwiOm51bGwsXCJkZWNpbWFsXCI6bnVsbCxcImRvdWJsZVwiOm51bGwsXCJuc1wiOm51bGwsXCJic1wiOm51bGwsXCJpbnRzZXRcIjpudWxsLFwiZGVjaW1hbHNldFwiOm51bGwsXCJkb3VibGVzZXRcIjpudWxsLFwibnVsbFwiOm51bGx9fSIsImNoZWNrc3VtIjoiZmQ1ZTc4NGI4NTdkODUyMzIxZTUyZThhMDRhNWJhMGEwNDQ0NzU3MjkzYzExMzk2ZWE5NTI1MTVjNDFmZDJiZSJ9"
+},
+    "FAILED": {
+    "BackupJobs": []
+},
+    "RUNNING": {
+    "BackupJobs": []
+}
+  }
+}

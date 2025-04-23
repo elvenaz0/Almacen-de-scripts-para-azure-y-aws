@@ -1,0 +1,1837 @@
+{
+  "Fecha": "Wed Apr 23 03:54:42 AM UTC 2025",
+  "Región": "us-east-1",
+  "PlanesDeBackup": [
+    {
+      "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+      "Detalle": {
+    "BackupPlan": {
+        "BackupPlanName": "1-day-central-plan",
+        "Rules": [
+            {
+                "RuleName": "1-day-central-rule",
+                "TargetBackupVaultName": "1-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 ? * * *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 480,
+                "Lifecycle": {
+                    "DeleteAfterDays": 7
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-1-Days"
+                },
+                "RuleId": "84836448-d00e-30e6-9c4b-f8829031fc44",
+                "CopyActions": [],
+                "EnableContinuousBackup": false,
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "VersionId": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+    "CreationDate": "2024-10-18T15:59:33.581000+00:00",
+    "LastExecutionDate": "2025-04-22T07:09:10.353000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": [
+  {
+    "BackupSelection": {
+      "SelectionName": "1-day-central-resources",
+      "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+      "Resources": [],
+      "ListOfTags": [
+        {
+          "ConditionType": "STRINGEQUALS",
+          "ConditionKey": "AWSBackup",
+          "ConditionValue": "Yes"
+        }
+      ],
+      "NotResources": [],
+      "Conditions": {
+        "StringEquals": [],
+        "StringNotEquals": [],
+        "StringLike": [],
+        "StringNotLike": []
+      }
+    },
+    "SelectionId": "8b900613-fba8-38c5-9ed7-a180ba90a521",
+    "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "CreationDate": "2024-10-18T15:59:33.581000+00:00"
+  }
+]
+    },
+    {
+      "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+      "Detalle": {
+    "BackupPlan": {
+        "BackupPlanName": "30-day-central-policy",
+        "Rules": [
+            {
+                "RuleName": "30-day-central-rule",
+                "TargetBackupVaultName": "30-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 28 * ? *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 1440,
+                "Lifecycle": {
+                    "DeleteAfterDays": 30
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-30-Days"
+                },
+                "RuleId": "5602e544-7ec7-3f51-bad5-504a772450f8",
+                "CopyActions": [],
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "VersionId": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+    "CreationDate": "2024-10-18T15:59:40.261000+00:00",
+    "LastExecutionDate": "2025-03-28T07:07:16.290000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": [
+  {
+    "BackupSelection": {
+      "SelectionName": "30-day-central-resources",
+      "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+      "Resources": [],
+      "ListOfTags": [
+        {
+          "ConditionType": "STRINGEQUALS",
+          "ConditionKey": "AWSBackup",
+          "ConditionValue": "Yes"
+        }
+      ],
+      "NotResources": [],
+      "Conditions": {
+        "StringEquals": [],
+        "StringNotEquals": [],
+        "StringLike": [],
+        "StringNotLike": []
+      }
+    },
+    "SelectionId": "e950fa8e-b1d3-3fac-8468-443377c23d05",
+    "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "CreationDate": "2024-10-18T15:59:40.261000+00:00"
+  }
+]
+    }
+  ],
+  "RecursosProtegidos": {
+    "Results": [
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0cdc2bca3489d00d6"
+        },
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-070d940bc0438c5c8"
+        },
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0990527363f75029c"
+        },
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0bc841be0912fdf59"
+        },
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0ab7a3379604a8418"
+        },
+        {
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-03ad05da5ac3872c3"
+        },
+        {
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "LastBackupTime": "2025-04-22T07:00:00+00:00",
+            "ResourceName": "EFS - QA",
+            "LastBackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "LastRecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:d86a9a90-08cc-4a57-8680-e458d1456095"
+        }
+    ]
+},
+  "VaultsDeBackup": {
+    "BackupVaultList": [
+        {
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2021-08-05T17:42:52.545000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "CreatorRequestId": "76b4cbc9-cbbb-6aad-ffc6-250c3e809fb8",
+            "NumberOfRecoveryPoints": 49,
+            "Locked": false
+        },
+        {
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2021-08-05T17:42:52.001000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "CreatorRequestId": "504b4062-962e-4847-24e5-c8255a805127",
+            "NumberOfRecoveryPoints": 7,
+            "Locked": false
+        },
+        {
+            "BackupVaultName": "Default",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:Default",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2019-08-12T22:15:26.170000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "CreatorRequestId": "Default",
+            "NumberOfRecoveryPoints": 0,
+            "Locked": false
+        }
+    ]
+},
+  "PuntosDeRecuperacion": [
+    {"Vault": "1-Day-Central-Vault", "CostoEstimadoUSD": 1594.25, "RecoveryPoints": {
+    "RecoveryPoints": [
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:d86a9a90-08cc-4a57-8680-e458d1456095",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:23:32.295000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-070d940bc0438c5c8",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:29:51.676000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-03ad05da5ac3872c3",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T08:08:30.386000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0ab7a3379604a8418",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T08:43:44.648000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0990527363f75029c",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:31:18.005000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0bc841be0912fdf59",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T07:28:43.934000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0cdc2bca3489d00d6",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-22T07:00:00+00:00",
+            "CompletionDate": "2025-04-22T08:04:03.513000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-29T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-08822da05f84cb295",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T07:23:18.252000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0270c0745c35dea8f",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T08:39:51.969000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-035acf089d4348066",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T08:14:38.763000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0123d4f39ff4911ad",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T07:36:04.065000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:ed38a0e8-aeb1-4eec-aa26-9de7a241bd89",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T07:20:19.448000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0125c2229f72e8637",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T07:33:11.860000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0c465017073b2bb77",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-21T07:00:00+00:00",
+            "CompletionDate": "2025-04-21T07:23:23.524000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-28T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-00d3789963d840180",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T08:42:05.499000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0edf966b5d10520bd",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T07:25:53.569000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:1a93949e-e0f3-41d8-8bd4-5e73e6ef405b",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T07:17:03.948000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0604d271e8c18eeb0",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T07:31:04.466000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-01d0073f07065e70e",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T07:32:22.450000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0d90e7b264a7c160e",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T08:22:13.483000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-076289ca6cf2786ab",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-20T07:00:00+00:00",
+            "CompletionDate": "2025-04-20T07:25:59.051000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0e5061d11061299c3",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T07:30:33.906000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0493dcc360d52d0ea",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T07:30:23.746000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-07d9be1c7c42ae69d",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T07:24:52.723000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0aa25bb0c48606928",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T08:42:23.014000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:ab927dbf-bc65-43ba-b806-aa00ac6f3fcb",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T07:21:14.592000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-01e86aa333bcd722a",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T07:26:47.287000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-012778e15ea66b123",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-19T07:00:00+00:00",
+            "CompletionDate": "2025-04-19T08:26:02.765000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-26T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0f91f379cd3e72965",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T08:45:00.454000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0e258daf0f52afbcb",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T07:22:59.893000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-06fa320ee3db434fe",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T07:34:38.565000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:6289247a-d961-410b-ae55-4dcb8ed77e1a",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T07:25:45.270000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0a77b13f577ae2e1a",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T07:30:31.689000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0eac65911ef85597d",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T07:36:11.855000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-07800dc241178c4f4",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-18T07:00:00+00:00",
+            "CompletionDate": "2025-04-18T08:20:41.367000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-25T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:23ee5880-a0c7-4815-9f04-131d431575c4",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T07:18:58.454000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0fdbc3806541d00f0",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T08:42:37.850000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0b8d072d3fedd0874",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T07:21:08.964000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0da090e6bb661feb0",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T07:33:41.965000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-079dfca0232c00144",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T07:27:50.805000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0c980bfe3f4eb5148",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T08:30:48.526000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-053158c6b687893b2",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-17T07:00:00+00:00",
+            "CompletionDate": "2025-04-17T07:24:52.693000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-24T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0bfb809dca6c81c6f",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T07:19:54.144000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0456bb90140122c40",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T07:33:05.560000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-01798fd76773a1642",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T07:29:25.744000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-08d60dec81c8664db",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T08:41:09.832000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0c6701e938599c169",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T07:30:58.007000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:11f86701-b835-43a4-8616-f50784db24ae",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T07:21:13.320000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-035921e5308892251",
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:1-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+                "BackupPlanVersion": "ZWMzMmYyNWEtNWRlMC00ODYwLWJjMzItZDExZmFjODI3YmM2",
+                "BackupRuleId": "84836448-d00e-30e6-9c4b-f8829031fc44"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-04-16T07:00:00+00:00",
+            "CompletionDate": "2025-04-16T08:37:06.628000+00:00",
+            "BackupSizeInBytes": 1191853424640,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-23T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 7
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        }
+    ]
+}},
+    {"Vault": "30-Day-Central-Vault", "CostoEstimadoUSD": 225.25, "RecoveryPoints": {
+    "RecoveryPoints": [
+        {
+            "RecoveryPointArn": "arn:aws:backup:us-east-1:680904994771:recovery-point:e5392f57-cc3d-4e53-accb-976eef5ed9ab",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:elasticfilesystem:us-east-1:680904994771:file-system/fs-a004f142",
+            "ResourceType": "EFS",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T07:22:11.229000+00:00",
+            "BackupSizeInBytes": 0,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "EncryptionKeyArn": "arn:aws:kms:us-east-1:680904994771:key/73b03aa2-e6d7-4452-a8c9-865c2dae0232",
+            "IsEncrypted": true,
+            "IsParent": false,
+            "ResourceName": "EFS - QA",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-06bd8735ac7c2e2b7",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0bc190726a02dde67",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T07:22:52.921000+00:00",
+            "BackupSizeInBytes": 569083166720,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Netweaver QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-09ba56fd27de2c529",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0594a95c23ebf1c9a",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T07:50:42.909000+00:00",
+            "BackupSizeInBytes": 1433445335040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_DEV_Hana DEV",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0fec2cabfa8c268f0",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-021a32975149e6e7f",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T07:22:56.818000+00:00",
+            "BackupSizeInBytes": 225485783040,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Netweaver PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-06143d2bff6772e46",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cdc477b202fcc6cd",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T09:39:57.948000+00:00",
+            "BackupSizeInBytes": 1138166333440,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Hana PRO",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0626c70a016e7301f",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-003592a2e9b14546e",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T07:39:54.327000+00:00",
+            "BackupSizeInBytes": 934155386880,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_QA_Hana QAS",
+            "VaultType": "BACKUP_VAULT"
+        },
+        {
+            "RecoveryPointArn": "arn:aws:ec2:us-east-1::image/ami-0d62717b5d52791ef",
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-1:680904994771:backup-vault:30-Day-Central-Vault",
+            "ResourceArn": "arn:aws:ec2:us-east-1:680904994771:instance/i-0cd71a4f45d80b8ca",
+            "ResourceType": "EC2",
+            "CreatedBy": {
+                "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanArn": "arn:aws:backup:us-east-1:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+                "BackupPlanVersion": "YTMwMzZlMjItMGIzNy00MDRjLTkxMGItZjFhNjY0NzI3NzJh",
+                "BackupRuleId": "5602e544-7ec7-3f51-bad5-504a772450f8"
+            },
+            "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+            "Status": "COMPLETED",
+            "CreationDate": "2025-03-28T07:00:00+00:00",
+            "CompletionDate": "2025-03-28T08:38:23.792000+00:00",
+            "BackupSizeInBytes": 536870912000,
+            "CalculatedLifecycle": {
+                "DeleteAt": "2025-04-27T07:00:00+00:00"
+            },
+            "Lifecycle": {
+                "DeleteAfterDays": 30
+            },
+            "IsEncrypted": false,
+            "IsParent": false,
+            "ResourceName": "ULTRALAB_PROD_Solman",
+            "VaultType": "BACKUP_VAULT"
+        }
+    ]
+}},
+    {"Vault": "Default", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
+    "RecoveryPoints": []
+}},
+  ],
+  "CostoTotalEstimadoUSD": 0
+}

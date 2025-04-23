@@ -1,0 +1,215 @@
+{
+  "Fecha": "Wed Apr 23 03:55:17 AM UTC 2025",
+  "Región": "us-east-2",
+  "PlanesDeBackup": [
+    {
+      "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+      "Detalle": {
+    "BackupPlan": {
+        "BackupPlanName": "1-day-central-plan",
+        "Rules": [
+            {
+                "RuleName": "1-day-central-rule",
+                "TargetBackupVaultName": "1-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 ? * * *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 480,
+                "Lifecycle": {
+                    "DeleteAfterDays": 7
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-1-Days"
+                },
+                "RuleId": "84836448-d00e-30e6-9c4b-f8829031fc44",
+                "CopyActions": [],
+                "EnableContinuousBackup": false,
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "BackupPlanArn": "arn:aws:backup:us-east-2:680904994771:backup-plan:orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "VersionId": "ZDEzOTFjZDUtNTVlMi00ZTU2LTgwNmItZTBmZTg0ZDc0NTM3",
+    "CreationDate": "2024-10-18T15:59:33.605000+00:00",
+    "LastExecutionDate": "2025-04-22T07:14:02.147000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": [
+  {
+    "BackupSelection": {
+      "SelectionName": "1-day-central-resources",
+      "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+      "Resources": [],
+      "ListOfTags": [
+        {
+          "ConditionType": "STRINGEQUALS",
+          "ConditionKey": "AWSBackup",
+          "ConditionValue": "Yes"
+        }
+      ],
+      "NotResources": [],
+      "Conditions": {
+        "StringEquals": [],
+        "StringNotEquals": [],
+        "StringLike": [],
+        "StringNotLike": []
+      }
+    },
+    "SelectionId": "8b900613-fba8-38c5-9ed7-a180ba90a521",
+    "BackupPlanId": "orgs/8e3ab2b3-dffc-31ee-b0d9-eba040591234",
+    "CreationDate": "2024-10-18T15:59:33.605000+00:00"
+  }
+]
+    },
+    {
+      "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+      "Detalle": {
+    "BackupPlan": {
+        "BackupPlanName": "30-day-central-policy",
+        "Rules": [
+            {
+                "RuleName": "30-day-central-rule",
+                "TargetBackupVaultName": "30-Day-Central-Vault",
+                "ScheduleExpression": "cron(0 7 28 * ? *)",
+                "StartWindowMinutes": 60,
+                "CompletionWindowMinutes": 1440,
+                "Lifecycle": {
+                    "DeleteAfterDays": 30
+                },
+                "RecoveryPointTags": {
+                    "Policy": "Central-30-Days"
+                },
+                "RuleId": "5602e544-7ec7-3f51-bad5-504a772450f8",
+                "CopyActions": [],
+                "ScheduleExpressionTimezone": "Etc/UTC"
+            }
+        ],
+        "AdvancedBackupSettings": [
+            {
+                "ResourceType": "EC2",
+                "BackupOptions": {
+                    "WindowsVSS": "disabled"
+                }
+            }
+        ]
+    },
+    "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "BackupPlanArn": "arn:aws:backup:us-east-2:680904994771:backup-plan:orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "VersionId": "ZjNkNTJhODYtMmQxNC00OTg3LWI4YTAtMTM5ODY3NTBiYTI0",
+    "CreationDate": "2024-10-18T15:59:40.235000+00:00",
+    "LastExecutionDate": "2025-03-28T07:09:38.368000+00:00",
+    "AdvancedBackupSettings": [
+        {
+            "ResourceType": "EC2",
+            "BackupOptions": {
+                "WindowsVSS": "disabled"
+            }
+        }
+    ]
+},
+      "Selecciones": [
+  {
+    "BackupSelection": {
+      "SelectionName": "30-day-central-resources",
+      "IamRoleArn": "arn:aws:iam::680904994771:role/service-role/AWSBackupDefaultServiceRole",
+      "Resources": [],
+      "ListOfTags": [
+        {
+          "ConditionType": "STRINGEQUALS",
+          "ConditionKey": "AWSBackup",
+          "ConditionValue": "Yes"
+        }
+      ],
+      "NotResources": [],
+      "Conditions": {
+        "StringEquals": [],
+        "StringNotEquals": [],
+        "StringLike": [],
+        "StringNotLike": []
+      }
+    },
+    "SelectionId": "e950fa8e-b1d3-3fac-8468-443377c23d05",
+    "BackupPlanId": "orgs/5b56fa43-df35-3c14-86f1-b5c86113e691",
+    "CreationDate": "2024-10-18T15:59:40.235000+00:00"
+  }
+]
+    }
+  ],
+  "RecursosProtegidos": {
+    "Results": []
+},
+  "VaultsDeBackup": {
+    "BackupVaultList": [
+        {
+            "BackupVaultName": "1-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-2:680904994771:backup-vault:1-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2022-01-21T00:13:07.821000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-2:680904994771:key/93938010-3a91-4857-88f3-42a7daa0d02d",
+            "CreatorRequestId": "cc30011a-b0e4-9bf0-6623-177751117daa",
+            "NumberOfRecoveryPoints": 0,
+            "Locked": false
+        },
+        {
+            "BackupVaultName": "15-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-2:680904994771:backup-vault:15-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2022-01-21T00:13:07.893000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-2:680904994771:key/93938010-3a91-4857-88f3-42a7daa0d02d",
+            "CreatorRequestId": "f4998dd7-1d19-dc40-777b-3ab0b8908b18",
+            "NumberOfRecoveryPoints": 0,
+            "Locked": false
+        },
+        {
+            "BackupVaultName": "30-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-2:680904994771:backup-vault:30-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2022-01-21T00:13:08.570000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-2:680904994771:key/93938010-3a91-4857-88f3-42a7daa0d02d",
+            "CreatorRequestId": "79c84d8f-d7de-dd6f-0a12-d2adf11eedd3",
+            "NumberOfRecoveryPoints": 0,
+            "Locked": false
+        },
+        {
+            "BackupVaultName": "7-Day-Central-Vault",
+            "BackupVaultArn": "arn:aws:backup:us-east-2:680904994771:backup-vault:7-Day-Central-Vault",
+            "VaultType": "BACKUP_VAULT",
+            "CreationDate": "2022-01-21T00:13:07.644000+00:00",
+            "EncryptionKeyArn": "arn:aws:kms:us-east-2:680904994771:key/93938010-3a91-4857-88f3-42a7daa0d02d",
+            "CreatorRequestId": "589837c5-8cfe-d3f1-a323-af4b4d78c00c",
+            "NumberOfRecoveryPoints": 0,
+            "Locked": false
+        }
+    ]
+},
+  "PuntosDeRecuperacion": [
+    {"Vault": "1-Day-Central-Vault", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
+    "RecoveryPoints": []
+}},
+    {"Vault": "15-Day-Central-Vault", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
+    "RecoveryPoints": []
+}},
+    {"Vault": "30-Day-Central-Vault", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
+    "RecoveryPoints": []
+}},
+    {"Vault": "7-Day-Central-Vault", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
+    "RecoveryPoints": []
+}},
+  ],
+  "CostoTotalEstimadoUSD": 0
+}

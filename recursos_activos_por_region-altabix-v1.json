@@ -1,0 +1,511 @@
+{
+  "ap-south-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0e7a2e13abac099fb"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-south-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-south-1:018944728681:rackspace-support",
+    "arn:aws:sns:ap-south-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-south-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-south-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "eu-north-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-085ab604cd42453d8"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:eu-north-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:eu-north-1:018944728681:rackspace-support",
+    "arn:aws:sns:eu-north-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:eu-north-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:eu-north-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "eu-west-3": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-024ae52ac4ce47c27"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:eu-west-3:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:eu-west-3:018944728681:rackspace-support",
+    "arn:aws:sns:eu-west-3:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:eu-west-3:018944728681:rackspace-support-standard",
+    "arn:aws:sns:eu-west-3:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "eu-west-2": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0b1ca5a57065449c1"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:eu-west-2:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:eu-west-2:018944728681:rackspace-support",
+    "arn:aws:sns:eu-west-2:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:eu-west-2:018944728681:rackspace-support-standard",
+    "arn:aws:sns:eu-west-2:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "eu-west-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0ec04e0f8e4c6e644"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:eu-west-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:eu-west-1:018944728681:rackspace-support",
+    "arn:aws:sns:eu-west-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:eu-west-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:eu-west-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ap-northeast-3": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-051d1cd8392486d15"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-northeast-3:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-northeast-3:018944728681:rackspace-support",
+    "arn:aws:sns:ap-northeast-3:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-northeast-3:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-northeast-3:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ap-northeast-2": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0428250ba8806f9bd"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-northeast-2:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-northeast-2:018944728681:rackspace-support",
+    "arn:aws:sns:ap-northeast-2:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-northeast-2:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-northeast-2:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ap-northeast-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0e2d686101a2550e0"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-northeast-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-northeast-1:018944728681:rackspace-support",
+    "arn:aws:sns:ap-northeast-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-northeast-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-northeast-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ca-central-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-00defcf64899bebcc"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ca-central-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ca-central-1:018944728681:rackspace-support",
+    "arn:aws:sns:ca-central-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ca-central-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ca-central-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "sa-east-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-07c62945e7d1f0739"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:sa-east-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:sa-east-1:018944728681:rackspace-support",
+    "arn:aws:sns:sa-east-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:sa-east-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:sa-east-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ap-southeast-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-042ec0ca6d0208803"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-southeast-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-southeast-1:018944728681:rackspace-support",
+    "arn:aws:sns:ap-southeast-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-southeast-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-southeast-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "ap-southeast-2": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0a6869108ba64581f"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:ap-southeast-2:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:ap-southeast-2:018944728681:rackspace-support",
+    "arn:aws:sns:ap-southeast-2:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:ap-southeast-2:018944728681:rackspace-support-standard",
+    "arn:aws:sns:ap-southeast-2:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "eu-central-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0782a8ea548dc4759"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:eu-central-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:eu-central-1:018944728681:rackspace-support",
+    "arn:aws:sns:eu-central-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:eu-central-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:eu-central-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "us-east-1": {
+    "EC2": [
+    [
+        "i-02822ee4d7ba27fd2"
+    ],
+    [
+        "i-0e139eceb946848e7"
+    ],
+    [
+        "i-07e0aeeccbfdfdbe6"
+    ],
+    [
+        "i-00575cf9983fe0013"
+    ],
+    [
+        "i-0ba48b46878ac8915"
+    ],
+    [
+        "i-0e8582766c210f418"
+    ],
+    [
+        "i-0158f56fe2927d0f8"
+    ],
+    [
+        "i-0cb8ab9458980f5d9"
+    ],
+    [
+        "i-0d3e1c389755d5049"
+    ]
+],
+    "EBS": [
+    "vol-06f849c62e82be5b8",
+    "vol-039204898676bcf59",
+    "vol-065e9e6b5dd0313cd",
+    "vol-0c8c30aef4b4765c5",
+    "vol-0e83df2389d89ca58",
+    "vol-00af17a03d94abf72",
+    "vol-04f1eda5e0f2b9e3a",
+    "vol-0247bd2ff0e342dbb",
+    "vol-06006149d10ce5546",
+    "vol-004d7c3406aff9eaf",
+    "vol-0d48aca0e37ef732e",
+    "vol-08ad8ce8d6e6f7829",
+    "vol-021b1df923c57b605",
+    "vol-0247fd52f55f81ecf",
+    "vol-0e3e3be0d856aa92f",
+    "vol-0247244285039be90",
+    "vol-082b02285caacf7e5",
+    "vol-0810ff8e2e746ac03",
+    "vol-033a0ac29d5588b74",
+    "vol-06deea0ee8dcaa21f",
+    "vol-0439b70d7082056ec",
+    "vol-04fc9c69f4e0b3471",
+    "vol-03fc0b92df5fd86fa",
+    "vol-0985fdcd6b0bcb79b",
+    "vol-0dce069f96cc6d3ab",
+    "vol-04a22c314fe29cdc9",
+    "vol-0426463bded482b08",
+    "vol-01e4250f4f1a5be13",
+    "vol-08548851c5490fdbd",
+    "vol-0beca6fc604314a38",
+    "vol-00480528706f83d25",
+    "vol-008ca915d67499c30",
+    "vol-0dbaa1fd80fd03107",
+    "vol-05c1ff350eeb2a0aa",
+    "vol-0c78aba3dc160fb9b",
+    "vol-00c25c9c1ba2548d6"
+],
+    "VPC": [
+    "vpc-00f0edf43b9f49546",
+    "vpc-0a10fac3b4b6f00f0"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:us-east-1:018944728681:SQL_SNS",
+    "arn:aws:sns:us-east-1:018944728681:by-front2go-ec2-monitoring",
+    "arn:aws:sns:us-east-1:018944728681:iNBest_Ops",
+    "arn:aws:sns:us-east-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:us-east-1:018944728681:rackspace-support",
+    "arn:aws:sns:us-east-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:us-east-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:us-east-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "us-east-2": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-057fc0dec674f3239"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:us-east-2:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:us-east-2:018944728681:rackspace-support",
+    "arn:aws:sns:us-east-2:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:us-east-2:018944728681:rackspace-support-standard",
+    "arn:aws:sns:us-east-2:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "us-west-1": {
+    "EC2": [],
+    "EBS": [],
+    "VPC": [
+    "vpc-0d4b32613978e1656"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:us-west-1:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:us-west-1:018944728681:rackspace-support",
+    "arn:aws:sns:us-west-1:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:us-west-1:018944728681:rackspace-support-standard",
+    "arn:aws:sns:us-west-1:018944728681:rackspace-support-urgent"
+],
+    "IAM": [],
+    "S3": []
+  },
+  "us-west-2": {
+    "EC2": [
+    [
+        "i-09133c34dd177f73b"
+    ],
+    [
+        "i-03f971b4eacc1618d"
+    ],
+    [
+        "i-0c96c7111e5447a3f"
+    ],
+    [
+        "i-0d31ce8a7016d38c6"
+    ],
+    [
+        "i-0b332f1cd643712e3"
+    ]
+],
+    "EBS": [
+    "vol-0556c089357204c33",
+    "vol-05d5372e91cbc4ea7",
+    "vol-0de9322a974e0228b",
+    "vol-04cffcf6820cc5746",
+    "vol-0cca09d9a41b4dd83",
+    "vol-0ed256f80555619ce",
+    "vol-099979ad32500bff2",
+    "vol-026b370cd239c97c7",
+    "vol-0f97968c51ee11c80",
+    "vol-086af48733f7e8edc",
+    "vol-092c046458522199d",
+    "vol-00498f8a03e7ef01e",
+    "vol-0d7a4932d6740f7de",
+    "vol-0ae3242927516fffc",
+    "vol-087fc9eeafb056697",
+    "vol-06439fe27a7d57c8a",
+    "vol-0645bdcb5e478cb10",
+    "vol-09a3d054ce100f453",
+    "vol-0ef805d990e74ee20",
+    "vol-09af952e1fd589492",
+    "vol-00de81d4facccaf42",
+    "vol-03cbeda1cc5a12133",
+    "vol-04190d63cd38f6d0f",
+    "vol-004c8ca1128e0348e",
+    "vol-039e6e1a9c07bbc59",
+    "vol-03e972d00d85531a7",
+    "vol-003024375fa91820c",
+    "vol-0b4c9e9ae46b0e85b",
+    "vol-009a0c597e78a62e3",
+    "vol-09f84d01bbe48d9e2",
+    "vol-099c70944ede8a213",
+    "vol-0e6c3ac528016490d",
+    "vol-06f2b0cb2fcf2d325",
+    "vol-0ab1f510d6c27bf34",
+    "vol-07687af08afec688e",
+    "vol-0b1a8e029d94c630f",
+    "vol-0005215318b95d2bc",
+    "vol-0389e84ebe8c7b95b",
+    "vol-04036188ccf24183c",
+    "vol-082adcfac73fcd2cb",
+    "vol-05701aa678f5a969b",
+    "vol-0582fcb887092a39c",
+    "vol-0829d22418652b7dc",
+    "vol-09eb121c3431dbbb8",
+    "vol-0a9e514e449065cbc",
+    "vol-081d7380472ab069e",
+    "vol-0289a86c11b0f9e5c",
+    "vol-06de4cb50cfe201f8",
+    "vol-06bb8c18bb4b7cfde",
+    "vol-0ddfb307f91c82790",
+    "vol-0ca02b832ad147eac",
+    "vol-077a48b6e786de98b",
+    "vol-03221dcaf17151c87",
+    "vol-002b36469f6565167",
+    "vol-008420cdd04fb3cd8",
+    "vol-0d1ea4e9bb56ca8c6",
+    "vol-0c0fe837582a0a65f",
+    "vol-0887facd2695aab20",
+    "vol-0942342d481f2b715",
+    "vol-07b4d48cd49bb2769",
+    "vol-0a862c901e11891f5",
+    "vol-02d5f7085a573084e",
+    "vol-07bd33ddcf426d945",
+    "vol-003defafa753a700f"
+],
+    "VPC": [
+    "vpc-01bb39ff3851ce26c",
+    "vpc-0c2988e666d22192f"
+],
+    "RDS": [],
+    "Lambda": [],
+    "APIGateway": [],
+    "DynamoDB": [],
+    "SQS": null,
+    "SNS": [
+    "arn:aws:sns:us-west-2:018944728681:rackspace-awsconfig",
+    "arn:aws:sns:us-west-2:018944728681:rackspace-support",
+    "arn:aws:sns:us-west-2:018944728681:rackspace-support-emergency",
+    "arn:aws:sns:us-west-2:018944728681:rackspace-support-standard",
+    "arn:aws:sns:us-west-2:018944728681:rackspace-support-urgent",
+    "arn:aws:sns:us-west-2:018944728681:rackspace-trail"
+],
+    "IAM": [],
+    "S3": []
+  }
+}
