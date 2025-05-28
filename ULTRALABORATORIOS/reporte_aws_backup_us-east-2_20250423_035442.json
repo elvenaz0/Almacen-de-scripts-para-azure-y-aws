@@ -209,7 +209,7 @@
 }},
     {"Vault": "7-Day-Central-Vault", "CostoEstimadoUSD": 0.00, "RecoveryPoints": {
     "RecoveryPoints": []
-}},
+}}
   ],
   "CostoTotalEstimadoUSD": 0
 }
