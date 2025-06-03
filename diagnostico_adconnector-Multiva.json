@@ -1,0 +1,48 @@
+{
+  "directory_details": [
+    {
+      "DirectoryDescriptions": [
+        {
+          "DirectoryId": "d-9067a08d30",
+          "Name": "multivaloresgf.local",
+          "ShortName": "multivaloresgf",
+          "Size": "Small",
+          "Alias": "multiva",
+          "AccessUrl": "multiva.awsapps.com",
+          "DnsIpAddrs": [
+            "10.160.14.3",
+            "10.160.14.156"
+          ],
+          "Stage": "Active",
+          "LaunchTime": "2022-12-01T20:04:12.508000+00:00",
+          "StageLastUpdatedDateTime": "2025-02-03T11:47:04.706000+00:00",
+          "Type": "ADConnector",
+          "ConnectSettings": {
+            "VpcId": "vpc-0813782c20119079a",
+            "SubnetIds": [
+              "subnet-0b1010b0f001706d5",
+              "subnet-0daf1490687914fb8"
+            ],
+            "CustomerUserName": "aws.cloud",
+            "SecurityGroupId": "sg-075e68a24ac3253bd",
+            "AvailabilityZones": [
+              "us-east-1b",
+              "us-east-1c"
+            ],
+            "ConnectIps": [
+              "10.10.178.76",
+              "10.10.179.66"
+            ]
+          },
+          "SsoEnabled": false,
+          "DesiredNumberOfDomainControllers": 0
+        }
+      ]
+    }
+  ],
+  "directory_events": [
+    {
+      "EventTopics": []
+    }
+  ]
+}

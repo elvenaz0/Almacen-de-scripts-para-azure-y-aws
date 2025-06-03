@@ -1,0 +1,53 @@
+{
+  "WorkspaceStatus": {
+    "WorkspaceId": "ws-b554csl05",
+    "DirectoryId": "d-9067a08d30",
+    "UserName": "eduardo.mazariego.ex",
+    "IpAddress": "10.10.179.109",
+    "State": "STARTING",
+    "BundleId": "wsb-6gkrxc3bt",
+    "SubnetId": "subnet-0daf1490687914fb8",
+    "ComputerName": "WSAMZN-JQSF8P8Q",
+    "WorkspaceProperties": {
+      "RunningMode": "AUTO_STOP",
+      "RunningModeAutoStopTimeoutInMinutes": 60,
+      "RootVolumeSizeGib": 80,
+      "UserVolumeSizeGib": 100,
+      "ComputeTypeName": "POWER",
+      "Protocols": [
+        "PCOIP"
+      ],
+      "OperatingSystemName": "WINDOWS_SERVER_2022",
+      "GlobalAccelerator": {
+        "Mode": "INHERITED",
+        "PreferredProtocol": "INHERITED"
+      }
+    },
+    "ModificationStates": []
+  },
+  "BundleInfo": {
+    "BundleId": "wsb-6gkrxc3bt",
+    "Name": "Power with Windows 10 (Server 2022 based) (PCoIP)",
+    "Owner": "Amazon",
+    "Description": "Windows Desktop Experience provided by Windows Server 2022 with TPM with PCoIP 4 vCPU 16GiB Memory 100GB Storage (English)",
+    "RootStorage": {
+      "Capacity": "175"
+    },
+    "UserStorage": {
+      "Capacity": "100"
+    },
+    "ComputeType": {
+      "Name": "POWER"
+    },
+    "LastUpdatedTime": "2023-08-01T19:57:21.266000+00:00",
+    "CreationTime": "2023-08-01T19:57:21.266000+00:00",
+    "State": "AVAILABLE",
+    "BundleType": "REGULAR"
+  },
+  "IPAvailability": {
+    "SubnetId": "subnet-0daf1490687914fb8",
+    "AvailableIpCount": 229
+  },
+  "IAMRoleValidation": null,
+  "IsCustomImage": false
+}
