@@ -44,6 +44,8 @@ DB_USERNAME=${DB_USERNAME:-"admin"}
 DB_PASSWORD=${DB_PASSWORD:-"$(openssl rand -base64 16)"}
 
 aws configure set region "$REGION" >/dev/null
+export AWS_REGION="$REGION"
+export AWS_DEFAULT_REGION="$REGION"
 
 # Array para registrar recursos creados
 CREATED=()
