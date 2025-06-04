@@ -117,8 +117,16 @@ create_nacls() {
     }
     NACL_PUB=$(create_nacl "${PROJECT_NAME}-nacl-public")
     NACL_PRI=$(create_nacl "${PROJECT_NAME}-nacl-private")
-    for SUB in $PUB_A_ID $PUB_B_ID; do aws ec2 associate-network-acl --subnet-id "$SUB" --network-acl-id "$NACL_PUB"; done
-    for SUB in $PRI_A_ID $PRI_B_ID $DB_A_ID $DB_B_ID; do aws ec2 associate-network-acl --subnet-id "$SUB" --network-acl-id "$NACL_PRI"; done
+    for SUB in $PUB_A_ID $PUB_B_ID; do
+        ASSOC=$(aws ec2 describe-network-acls --filters "Name=association.subnet-id,Values=$SUB" \
+                 --query 'NetworkAcls[0].Associations[0].NetworkAclAssociationId' --output text)
+        aws ec2 replace-network-acl-association --association-id "$ASSOC" --network-acl-id "$NACL_PUB" >/dev/null
+    done
+    for SUB in $PRI_A_ID $PRI_B_ID $DB_A_ID $DB_B_ID; do
+        ASSOC=$(aws ec2 describe-network-acls --filters "Name=association.subnet-id,Values=$SUB" \
+                 --query 'NetworkAcls[0].Associations[0].NetworkAclAssociationId' --output text)
+        aws ec2 replace-network-acl-association --association-id "$ASSOC" --network-acl-id "$NACL_PRI" >/dev/null
+    done
     log "NACLs: $NACL_PUB $NACL_PRI"
 }
 
