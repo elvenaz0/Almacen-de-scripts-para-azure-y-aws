@@ -47,6 +47,18 @@ aws configure set region "$REGION" >/dev/null
 export AWS_REGION="$REGION"
 export AWS_DEFAULT_REGION="$REGION"
 
+# verificar que DOMAIN_NAME no sea un dominio reservado
+validate_domain() {
+    local reserved=("example.com." "example.net." "example.org.")
+    for r in "${reserved[@]}"; do
+        if [[ "$DOMAIN_NAME" == "$r" ]]; then
+            err "El dominio $DOMAIN_NAME esta reservado por AWS. Define DOMAIN_NAME con un dominio valido."
+            exit 1
+        fi
+    done
+}
+validate_domain
+
 # Array para registrar recursos creados
 CREATED=()
 cleanup() {

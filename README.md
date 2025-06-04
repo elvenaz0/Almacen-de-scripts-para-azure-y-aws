@@ -7,7 +7,7 @@ aqui se guardan scripts tipo sh para servicios de aws y azure desde cli
 - `network-audit.sh`: recopila informacion de redes (VPC, VPN, tablas de ruteo, security groups, etc.) en todas las regiones. Genera `network-info.json.gz` con la informacion agrupada por servicio y un resumen en `network-info.md`.
 - `network-audit-region.sh`: version mejorada que organiza la informacion por region e incluye detalles de endpoints, peering y otros servicios de red. Produce `network-report.json.gz` y un resumen en `network-report.md`.
 - `vpn-diagnose.sh`: verifica el estado de una conexion VPN especifica y guarda la informacion en `vpn-diagnostic.json`.
-- `create-ha-ecommerce.sh`: despliega una arquitectura minima de e-commerce en alta disponibilidad utilizando AWS CLI. Los parametros pueden definirse en un archivo `.env` para facilitar su reutilizacion. El script usa la variable `REGION` y establece `AWS_REGION`/`AWS_DEFAULT_REGION` para forzar la ejecucion en la region seleccionada.
+- `create-ha-ecommerce.sh`: despliega una arquitectura minima de e-commerce en alta disponibilidad utilizando AWS CLI. Los parametros pueden definirse en un archivo `.env` para facilitar su reutilizacion. El script usa la variable `REGION` y establece `AWS_REGION`/`AWS_DEFAULT_REGION` para forzar la ejecucion en la region seleccionada. Define `DOMAIN_NAME` con un dominio real (no utilices `example.com` ni otros dominios reservados).
 
 Ejemplo de uso:
 ```sh
